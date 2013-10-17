@@ -16,3 +16,12 @@ EARLY_EVENING = 3500
 SUNSET = 2500
 
 CANDLE_LIGHT = 2000
+
+## f.lux indoor lighting temperatures
+HALOGEN = 3400
+TUNGSTEN = 2700
+FLUORESCENT = 4100
+
+## f.lux transition times (in seconds)
+FLUX_FAST = 20
+FLUX_SLOW = 3600  # 1 hour
