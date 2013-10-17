@@ -2,7 +2,7 @@
 from __future__ import print_function
 import time
 from datetime import datetime
-from fluxotron import Bridge, presets
+from heliotron import Bridge, presets
 from astral import Astral
 
 ## Set up our timezone by feeding in the nearest major city, and then a
