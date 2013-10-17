@@ -48,7 +48,7 @@ for light in lights:
 
 time.sleep(3)
 
-## Switch in jarring fashion to 4500K (equivalent to clear a mid-afternoon sky)
+## Switch in jarring fashion to 4500K (equivalent to a clear mid-afternoon sky)
 print('Jarring temperature change to %dK...' % presets.MID_AFTERNOON)
 for light in lights:
     print('- at %s' % light.name)
