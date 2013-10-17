@@ -1,4 +1,4 @@
-from util import RestObject
+from util import RestObject, kelvin_to_mired, secs_to_lsecs
 
 KELVIN_MIN = 2000
 KELVIN_MED = 4500
@@ -8,14 +8,6 @@ MIRED_MED = 222
 MIRED_MAX = 153
 LUM_MIN = 0
 LUM_MAX = 255
-
-
-def kelvin_to_mired(kelvin):
-    return int(1000000 / kelvin)
-
-
-def secs_to_lsecs(secs):
-    return secs * 10
 
 
 class Light(RestObject):

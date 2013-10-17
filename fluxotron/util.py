@@ -3,6 +3,14 @@ from requests import get, put
 import json
 
 
+def kelvin_to_mired(kelvin):
+    return int(1000000 / kelvin)
+
+
+def secs_to_lsecs(secs):
+    return secs * 10
+
+
 class RestObject(object):
     def __init__(self, bridge=None):
         self.id = ''
