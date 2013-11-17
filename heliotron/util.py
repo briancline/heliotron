@@ -13,13 +13,13 @@ def secs_to_lsecs(secs):
 
 class RestObject(object):
     def __init__(self, bridge=None):
-        self.id = ''
+        self.object_id = ''
         self.rest_group = 'unknown'
         self.bridge = bridge
 
     def put(self, uri, body=None):
         url = '%s/%s/%s/%s' % (self.bridge.base_url, self.rest_group,
-                               self.id, uri)
+                               self.object_id, uri)
         req = put(url, data=json.dumps(body))
         #print(req.text)
         return req

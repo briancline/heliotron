@@ -1,4 +1,4 @@
-from util import RestObject, kelvin_to_mired, secs_to_lsecs
+from heliotron.util import RestObject, kelvin_to_mired, secs_to_lsecs
 
 KELVIN_MIN = 2000
 KELVIN_MED = 4500
@@ -11,9 +11,11 @@ LUM_MAX = 255
 
 
 class Light(RestObject):
-    def __init__(self, id=None, name=None, bridge=None, color_temp=None,
+    def __init__(self, light_id=None, name=None, bridge=None, color_temp=None,
                  trans_time=None):
-        self.id = id
+        super.__init__(bridge=bridge)
+
+        self.light_id = light_id
         self.name = name
         self.bridge = bridge
         self.rest_group = 'lights'

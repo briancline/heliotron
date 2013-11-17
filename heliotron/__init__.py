@@ -1,6 +1,6 @@
 #from requests import get
-from bridge import Bridge
-from light import Light
-import presets
+from heliotron.bridge import Bridge
+from heliotron.light import Light
+import heliotron.presets
 
 __all__ = ['Bridge', 'Light', 'presets']

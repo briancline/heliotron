@@ -1,5 +1,5 @@
-from util import RestObject
-from light import Light
+from heliotron.util import RestObject
+from heliotron.light import Light
 
 
 class Bridge(object):
