@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='heliotron',
-    version='0.2.0',
+    version='0.2.1',
     author='Brian Cline',
     author_email='brian.cline@gmail.com',
     description='Simple library to interface with Philips Hue light bridges.',
