@@ -9,6 +9,6 @@ class Bridge(object):
         self.base_url = 'http://%s/api/%s' % (self.ip, self.app_name)
 
     def get_lights(self):
-        lights = RestObject(self).get('lights').json()
-        return [Light(id=light_id, name=light['name'], bridge=self)
+        lights = RestObject(bridge=self).get('lights').json()
+        return [Light(light_id=light_id, name=light['name'], bridge=self)
                 for light_id, light in lights.iteritems()]

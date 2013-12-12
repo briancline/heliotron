@@ -13,7 +13,8 @@ LUM_MAX = 255
 class Light(RestObject):
     def __init__(self, light_id=None, name=None, bridge=None, color_temp=None,
                  trans_time=None):
-        super.__init__(bridge=bridge)
+        super(Light, self).__init__(object_id=light_id,
+                                    bridge=bridge)
 
         self.light_id = light_id
         self.name = name

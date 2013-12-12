@@ -1,4 +1,3 @@
-#from __future__ import print_function
 from requests import get, put
 import json
 
@@ -12,8 +11,8 @@ def secs_to_lsecs(secs):
 
 
 class RestObject(object):
-    def __init__(self, bridge=None):
-        self.object_id = ''
+    def __init__(self, object_id='', bridge=None):
+        self.object_id = object_id
         self.rest_group = 'unknown'
         self.bridge = bridge
 
@@ -21,7 +20,6 @@ class RestObject(object):
         url = '%s/%s/%s/%s' % (self.bridge.base_url, self.rest_group,
                                self.object_id, uri)
         req = put(url, data=json.dumps(body))
-        #print(req.text)
         return req
 
     def get(self, uri):
