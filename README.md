@@ -1,6 +1,8 @@
 HELIOTRON
 =========
 
+[![PyPI version](https://badge.fury.io/py/heliotron.png)](http://badge.fury.io/py/heliotron)
+
 Heliotron is a simple library that talks to Philips Hue light bridges through
 [a supported REST API][1]. It is currently a fairly rough work-in-progress.
 
